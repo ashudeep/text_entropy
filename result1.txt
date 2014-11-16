@@ -1,0 +1,12 @@
+Newspapers+Blogs
+Spaces Not included
+1-gram Shannon entropy:  5.125733065
+Minimum number of bits required to encode each symbol: 6.0
+2-gram Shannon entropy:  4.21842764606
+
+Spcaes Included
+1-gram Shannon entropy:  4.80909024066
+Minimum number of bits required to encode each symbol: 5.0
+2-gram Shannon entropy:  3.667471084
+Minimum number of bits required to encode each symbol:  4.0
+
