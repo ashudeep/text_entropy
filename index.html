@@ -1,0 +1,215 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<head>
+		<title>Entropy of a Language</title>
+	</head>
+	<body>
+		<center>
+		<h1 style="text-align: center;">
+			Entropy of a Language</h1>
+		<h3 style="text-align: center;">
+			Punjabi Language</h3>
+		<p style="text-align: center;">
+			Entropy:&nbsp;<span style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">Entropy is a measure of&nbsp;</span><i style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">unpredictability</i><span style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">&nbsp;or&nbsp;</span><i style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">information content</i><span style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">.&nbsp;</span></p>
+		<h1 style="text-align: center;">
+			<img alt="H(\mathcal{S}) = - \sum p_i \log_2 p_i, \,\!" src="http://upload.wikimedia.org/math/c/a/2/ca29f373129e5aa2a5d1ed24e51920dc.png" /><font face="sans-serif" size="2"><span style="line-height: 19.18402862548828px;">&nbsp;</span></font></h1>
+		<p style="text-align: center;">
+			<span style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">where&nbsp;</span><i style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">p</i><sub style="line-height: 1em; font-family: sans-serif; background-color: rgb(255, 255, 255);"><i>i</i></sub><span style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">&nbsp;is the probability of an individual symbol&nbsp;</span><i style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">i</i></p>
+		<p style="text-align: center;">
+			<img alt="H(\mathcal{S}) = - \sum_i p_i \sum_j  \  p_i (j) \log_2 p_i (j), \,\!" class="tex" src="http://upload.wikimedia.org/math/2/3/e/23e272a12e0592a866901203df55457c.png" style="border: none; vertical-align: middle; font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);" /></p>
+		<p style="text-align: center;">
+			<span style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">where&nbsp;</span><i style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">i</i><span style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">&nbsp;is the previous character</span><span style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">&nbsp;and&nbsp;</span><img alt="p_i(j)" class="tex" src="http://upload.wikimedia.org/math/f/f/8/ff80e0c579eff2d8e4c51db5775b992d.png" style="border: none; vertical-align: middle; margin: 0px; font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);" /><span style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">&nbsp;is the probability of&nbsp;</span><i style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">j</i><span style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">&nbsp;given&nbsp;</span><i style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">i</i><span style="font-family: sans-serif; font-size: 13px; line-height: 19.1875px; background-color: rgb(255, 255, 255);">&nbsp;as the previous character.</span></p>
+		<p style="text-align: center;">
+			Codes: <a href="unigram.py">First Order Entropy(Unigram Entropy)</a><br />
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="bigram.py">Second Order Entropy (Bigram Entropy)</a></p>
+		<h4 style="text-align: center;">
+			Datasets Used: <a href="Pan_newspapers.txt">Pan_Newspapers.txt</a>&nbsp;+&nbsp;<a href="Pan_blogs.txt">Pan_blogs.txt</a></h4>
+		<h2 style="text-align: center;">
+			Results</h2>
+		<table border="1" cellpadding="1" cellspacing="1" style="width: 500px;">
+			<tbody>
+				<tr>
+					<td style="text-align: center;">
+						&nbsp;</td>
+					<td style="text-align: center;">
+						Zero-Order log_2(n)</td>
+					<td style="text-align: center;">
+						Unigram Entropy</td>
+					<td style="text-align: center;">
+						Bigram Entropy</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">
+						Spaces-included</td>
+					<td style="text-align: center;">
+						<div>
+							6.37503943134692</div>
+					</td>
+					<td style="text-align: center;">
+						4.80909024066</td>
+					<td style="text-align: center;">
+						3.667471084</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">
+						Spaces-removed</td>
+					<td style="text-align: center;">
+						6.3575520046180</td>
+					<td style="text-align: center;">
+						5.125733065</td>
+					<td style="text-align: center;">
+						4.21842764606&nbsp;</td>
+				</tr>
+			</tbody>
+		</table>
+		<p style="text-align: center;">
+			Comparison with English and Hindi</p>
+		<p style="text-align: center;">
+			English</p>
+		<table border="1" cellpadding="1" cellspacing="1" style="width: 500px;">
+			<tbody>
+				<tr>
+					<td>
+						&nbsp;</td>
+					<td>
+						Zero Order log_2(n)</td>
+					<td>
+						Unigram entropy</td>
+					<td>
+						Bigram Entropy</td>
+				</tr>
+				<tr>
+					<td>
+						Spaces Included</td>
+					<td>
+						<span style="background-color: rgb(255, 255, 255);">4.76</span></td>
+					<td>
+						<span style="background-color: rgb(255, 255, 255);">4.03</span></td>
+					<td>
+						3.32</td>
+				</tr>
+				<tr>
+					<td>
+						Spaces Removed</td>
+					<td>
+						<span style="background-color: rgb(255, 255, 255);">4.70</span></td>
+					<td>
+						<span style="background-color: rgb(255, 255, 255);">4.14</span></td>
+					<td>
+						3.56</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			Source:&nbsp;<a href="http://people.seas.harvard.edu/~jones/cscie129/papers/stanford_info_paper/entropy_of_english_9.htm">http://people.seas.harvard.edu/~jones/cscie129/papers/stanford_info_paper/entropy_of_english_9.htm</a></p>
+		<p>
+			Hindi</p>
+		<table border="1" cellpadding="1" cellspacing="1" style="width: 500px;">
+			<tbody>
+				<tr>
+					<td>
+						Zero Order</td>
+					<td>
+						Unigram entropy</td>
+					<td>
+						Bigram Entropy</td>
+				</tr>
+				<tr>
+					<td>
+						5.61</td>
+					<td>
+						4.906</td>
+					<td>
+						3.79</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			Source: <cite style="color: rgb(0, 128, 42); font-style: normal; font-family: arial, sans-serif; white-space: nowrap; background-color: rgb(255, 255, 255); font-size: 14px !important;">www.cse.iitb.ac.in/~cs626-460-2012/seminar.../NLP_and_<b>Entropy</b>.pptx</cite><span style="color: rgb(102, 102, 102); font-family: arial, sans-serif; font-size: small; line-height: 12px; white-space: nowrap; background-color: rgb(255, 255, 255);">&lrm;</span></p>
+		<br><br><br>
+		<table border="1" cellpadding="1" cellspacing="1" style="width: 500px;">
+			<tbody>
+				<tr>
+					<td>
+						<p>
+							Most frequent Unigrams</p>
+						<p>
+							ਾ : 2924736</p>
+						<div>
+							ਰ : 1855612</div>
+						<div>
+							ਸ਼ : 1470080</div>
+						<div>
+							ਦ : 1425781</div>
+						<div>
+							ਕ : 1398298</div>
+						<div>
+							ਲ : 1348115</div>
+						<div>
+							ਧ : 1325806</div>
+						<div>
+							ਢ : 1120737</div>
+						<div>
+							ਭ : 1028930</div>
+						<div>
+							ਭ : 837897</div>
+						<div>
+							ਫ : 760621</div>
+						<div>
+							ਜ਼ : 744661</div>
+						<div>
+							ਖ਼ : 692202</div>
+						<div>
+							ਇ : 682204</div>
+						<div>
+							ਥ : 681810</div>
+						<div>
+							ਯ : 681688</div>
+					</td>
+					<td>
+						<div>
+							Most frequent Bigrams</div>
+						<div>
+							&nbsp;</div>
+						<div>
+							ਾਂ : &nbsp;549934.0</div>
+						<div>
+							ਦੇ : &nbsp;361575.0</div>
+						<div>
+							ਾਰ : &nbsp;336848.0</div>
+						<div>
+							ਦਾ : &nbsp;304406.0</div>
+						<div>
+							ਦੀ : &nbsp;303585.0</div>
+						<div>
+							ਤੇ : &nbsp;269920.0</div>
+						<div>
+							ਿਆ : &nbsp;253239.0</div>
+						<div>
+							ਵਿ : &nbsp;247870.0</div>
+						<div>
+							ਨਾ : &nbsp;242352.0</div>
+						<div>
+							ਾਲ : &nbsp;240957.0</div>
+						<div>
+							ਆਂ : &nbsp;230849.0</div>
+						<div>
+							ਦ : &nbsp;220730.0</div>
+						<div>
+							ਾਹ : &nbsp;216495.0</div>
+						<div>
+							ਤਾ : &nbsp;216139.0</div>
+						<div>
+							ਹੀ : &nbsp;209479.0</div>
+						<div>
+							ਹਾ : &nbsp;207010.0</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br><br>
+		Codes: <a href="max_freq.py">max_freq.py</a> | <a href="max_freq_bigrams.py">max_freq_bigrams.py</a>
+		</center>
+		</body>
+</html>
+
